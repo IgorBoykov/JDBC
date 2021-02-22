@@ -18,10 +18,16 @@ public class Mapper {
 		String lastName = result.getString("lastName");
 
 		setEmployee.add(new Employee(id, firstName, lastName));
+		
+		for (Employee employee : setEmployee) {
+			System.out.println(employee);
+			
+		}
 
 		return setEmployee;
 	}
 
+	
 //	public static Employee employeeMap (ResultSet result) throws SQLException {
 //    	int id = result.getInt("id");
 //    	String firstName = result.getString("firstName");

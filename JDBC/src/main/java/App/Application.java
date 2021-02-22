@@ -20,7 +20,7 @@ public class Application
         ResultSet result = statement.executeQuery(READ_ALL);
         
         while(result.next()) {
-        	System.out.println(Mapper.setEmployeeMap(result));
+        	Mapper.setEmployeeMap(result);
        }
     }
 }
